@@ -1,0 +1,103 @@
+@import "../../app.scss";
+
+.services{
+    background: linear-gradient(180deg, rgba(12, 3, 1, 0.914), rgba(81, 38, 28, 0.914));
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .textContainer{
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include mobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+          }
+      
+
+        p{
+            font-weight: 200;
+            font-size: 13px;
+            color: gray;
+            text-align: right;
+        }
+        hr{
+            width: 400px;
+            border: none;
+            border-top: 0.5px solid gray;
+        }
+    }
+
+    .titleContainer{
+        flex: 2;
+        align-items: center; 
+        display: flex;   
+        flex-direction: column;
+
+        .title{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            img{
+                width: 250px;
+                height: 90px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+
+            h1{
+                font-size: 80px;
+                font-weight: 100;
+            }
+
+            button{
+                width: 250px;
+                height: 90px;
+                border-radius: 50px;
+                background-color: rgb(212, 91, 21);
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .listContainer{
+        flex: 2;
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        
+
+        .box{
+            padding: 50px;
+            border: 0.5px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 11px;
+            }
+
+            button{
+                padding: 10px;
+                background-color: rgb(212, 91, 21);
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
+}
